@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .div{height: 30px;width: 1500px;background-color: rgba(146, 146, 140, 0.297);padding-top: 8px;padding-left: 10px;}
+  
+/*.flex{display: flex; margin-top: 10px;
+   
+}
+.div1{background-color: grey;
+         }
+    .div2{background-color: grey;margin-left: 5px;
+        }     
+    .div3{background-color: grey;margin-left: 5px
+        }    
+    .div4{background-color: grey;margin-left: 5px
+        }
+
+        .suze{flex: 25%;}
+*/
+
+.grid{display: grid;margin-top: 10px;
+        height: 8vh;gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        /* grid-template-areas: "box box2 box3 box4"; */
+    }
+    .div1{background-color: grey;
+         }
+    .div2{background-color: grey;
+        margin-left: 5px;
+        }     
+    .div3{background-color: grey;
+        margin-left: 5px;
+        }    
+    .div4{background-color: grey;
+        margin-left: 5px;
+        }
+      
+        div{
+            padding: 12px;
+        }
+    
+        
+     @media screen and (max-width: 1200px) {
+        
+.grid{grid-template-columns: repeat(3,1fr);
+    height: 8vh;}
+
+        
+        }
+        /* @media screen and (max-width) {
+            
+        } */
+    
+
+</style>
+<body>
+    <div class="div">select the items given below</div>
+
+    <div class="grid">
+    <div class="div1">h</div>
+    <div class="div2">u</div>
+    <div class="div3">d</div>
+    <div class="div4">r</div>
+    </div>
+
+
+</body>
+</html>

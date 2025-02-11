@@ -1,0 +1,26 @@
+.abc{display: grid;
+   height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: "first first first" "second third fourth" "second fifth fifth";
+
+}
+.one{
+    background-color: green;
+    grid-area: first;
+}
+
+.two{background-color: magenta;
+    grid-area: second;
+}
+
+.three{background-color: yellow;
+    grid-area: third;}
+    
+.four{background-color: blue;
+    grid-area: fourth;}
+
+    .five{background-color: brown;
+    grid-area: fifth;}
+
+    

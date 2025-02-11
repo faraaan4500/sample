@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+
+const is_palindrome = (number) => {
+    if (typeof number != "number") {
+        return false
+    }
+    let temp = number
+    let reversed = 0
+    while (temp > 0) { 
+        const lastDigit = temp % 10 
+        reversed = reversed * 10 + lastDigit 
+        temp = Math.floor(temp / 10) 
+    }
+    return number === reversed 
+}
+
+const sumOfPalindrome = (arr, cb) => {
+    let sum = 0
+    for (let index = 0; index < arr.length; index++){
+        const result = is_palindrome(arr[index])
+        if (result) {
+            sum += arr[index]
+        }
+    }
+    cb(sum)
+}
+
+sumOfPalindrome([121, 232, 987], function (value) {
+    console.log(value)
+})
+
+    </script>
+</body>
+</html>

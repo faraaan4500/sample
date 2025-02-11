@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+// let x=0;
+// let y=0;
+
+// for(i=0;i<=50;i++)
+// {
+//     if(i%2==0)
+//     {x +=i;}
+//     else
+//     {y+=i;}
+// }
+// console.log("sum of odd",x)
+// console.log("sum of even",y)
+
+
+
+// work 2
+
+
+// let x=0;
+
+// let y=0;
+
+// for(i=0; i<=10; i++)
+// {
+//     y=y+i;
+// }
+
+// console.log("sum of first ten natural numbers",y)
+
+
+// work 3
+
+
+// function Sum(n) {
+//   let sum = 0;
+  
+//   console.log(`First ${n} natural numbers:`);
+//   for (let i = 1; i <= n; i++) {
+//     console.log(i);
+//     sum += i;
+//   }
+  
+//   console.log(`Sum of first ${n} natural numbers: ${sum}`);
+// }
+
+// let n = 10;
+//  Sum(n);
+
+// work 4
+
+
+// function check(num) {
+//   if (num > 0) {
+//     console.log(`${num} is a positive number.`);
+//   } else if (num < 0) {
+//     console.log(`${num} is a negative number.`);
+//   } else {
+//     console.log(`${num} is zero.`);
+//   }
+// }
+
+// let number = -5;
+// check(number);
+
+
+// work 5
+
+
+
+// function EvenOrOdd(num) {
+//   if (num % 2 === 0) {
+//     console.log(`${num} is an even number.`);
+//   } else {
+//     console.log(`${num} is an odd number.`);
+//   }
+// }
+
+// let number = 7;
+// EvenOrOdd(number);
+
+// work 6
+
+
+
+// work 7
+
+
+// function Number(num1, num2) {
+//   if (num1 > num2) {
+//     console.log(`${num1} is greater than ${num2}`);
+//   } else if (num2 > num1) {
+//     console.log(`${num2} is greater than ${num1}`);
+//   } else {
+//     console.log(`${num1} and ${num2} are equal.`);
+//   }
+// }
+
+// let number1 = 10;
+// let number2 = 20;
+// Number(number1, number2);
+
+
+
+// work 8
+
+// function Grade(grade) {
+//   let letterGrade;
+  
+//   if (grade >= 90) {
+//     letterGrade = 'A';
+//   } else if (grade >= 80) {
+//     letterGrade = 'B';
+//   } else if (grade >= 70) {
+//     letterGrade = 'C';
+//   } else if (grade >= 60) {
+//     letterGrade = 'D';
+//   } else {
+//     letterGrade = 'F';
+//   }
+
+//   console.log(`The letter grade for ${grade} is ${letterGrade}`);
+// }
+
+// let grade = 85;
+// Grade(grade);
+
+
+// work 9
+
+
+// function Ticket(age) {
+//   let ticketPrice;
+
+//   if (age < 12) {
+//     ticketPrice = 5; 
+//   } else if (age >= 12 && age <= 18) {
+//     ticketPrice = 10; 
+//   }  else if (age >= 18 && age <= 60) {
+//     ticketPrice = 20; 
+//   } else {
+//     ticketPrice = 15;
+//   }
+
+//   console.log(`The ticket price for someone aged ${age} is $${ticketPrice}`);
+// }
+
+
+// let age = 10;
+// Ticket(age);
+
+// age = 15;
+// Ticket(age);
+
+// age = 20;
+// Ticket(age);
+
+// age = 65;
+// Ticket(age);
+
+
+
+// work 10
+
+
+// function LeapYear(year) {
+ 
+//   if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+//     console.log(`${year} is a leap year.`);
+//   } else {
+//     console.log(`${year} is not a leap year.`);
+//   }
+// }
+
+// let year = 2024;
+// LeapYear(year);
+
+
+// work 11
+
+
+// function Discount(amount) {
+//   let discount;
+
+//   if (amount >= 100) {
+//     discount = 20; 
+//   } else if (amount >= 50) {
+//     discount = 10;
+//   } else {
+//     discount = 0;  
+//   }
+
+//   console.log(`For a purchase amount of $${amount}, the discount is $${discount}.`);
+// }
+
+
+// let purchaseAmount = 120;
+// Discount(purchaseAmount);
+
+// purchaseAmount = 75;
+// Discount(purchaseAmount);
+
+// purchaseAmount = 30;
+// Discount(purchaseAmount);
+
+
+// work 12
+
+
+// function Time() {
+//   let currentTime = new Date();
+//   let hours = currentTime.getHours();
+
+//   if (hours >= 6 && hours < 12) {
+//     console.log("Good Morning!");
+//   } else if (hours >= 12 && hours < 18) {
+//     console.log("Good Afternoon!");
+//   } else {
+//     console.log("Good Evening!");
+//   }
+// }
+
+
+// Time();
+
+// work 13
+
+// function calculateBMI(weight, height) {
+//   let bmi = weight / (height * height);
+
+//   let category;
+//   if (bmi < 18.5) {
+//     category = "Underweight";
+//   } else if (bmi >= 18.5 && bmi < 24.9) {
+//     category = "Normal weight";
+//   } else if (bmi >= 25 && bmi < 29.9) {
+//     category = "Overweight";
+//   } else {
+//     category = "Obesity";
+//   }
+
+//   console.log(`Your BMI is ${bmi.toFixed(2)}. You are categorized as: ${category}`);
+// }
+
+// let weight = 60; 
+// let height = 0.75;
+// calculateBMI(weight, height);
+
+
+// work 14
+
+
+
+function guessTheNumber() {
+  let secretNumber =  50; 
+  let guess;
+ 
+
+  while (guess !== secretNumber) {
+    guess = parseInt(prompt("Guess the number between 1 and 100:"));
+
+    if (isNaN(guess)) {
+      alert("Please enter a valid number.");
+      continue;
+    }
+
+   
+
+    if (guess < secretNumber) {
+      alert("Your guess is low! Try again.");
+    } else if (guess > secretNumber) {
+      alert("Your guess is high! Try again.");
+    } else {
+      alert(`Congratulations! You've guessed the correct number ${secretNumber} `);
+    }
+  }
+}
+
+guessTheNumber();
+
+
+
+
+
+    </script>
+</body>
+</html>

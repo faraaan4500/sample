@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// Write a function that takes an array of strings and a minimum length, 
+// and returns a new array containing only the strings that are longer than 
+// the specified length using the filter method.
+
+
+function filterLength(arr, minLength) {
+const Strings = arr.filter(str => str.length > minLength);
+
+             return Strings;
+}
+
+const strings = ["alen", "ashwin", "kevin", "johnwick", "abraham"];
+
+        const minLength = 5;
+
+
+const result = filterLength(strings, minLength);
+
+
+
+
+console.log(result); 
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+
+function isArmstrong(num) {
+  const numStr = num.toString();
+  const numDigits = numStr.length;
+  let sum = 0;
+
+  for (let i = 0; i < numDigits; i++) {
+    sum += Math.pow(parseInt(numStr[i]), numDigits);
+  }
+
+  return sum === num;
+}
+
+function printArmstrongNumbers(arr, callback) {
+  arr.forEach((num) => {
+    if (callback(num)) {
+      console.log(num);
+    }
+  });
+}
+
+let numbers = [153, 370, 371, 9474, 123, 407, 5, 6];
+
+printArmstrongNumbers(numbers, isArmstrong);
+
+
+
+    </script>
+</body>
+</html>

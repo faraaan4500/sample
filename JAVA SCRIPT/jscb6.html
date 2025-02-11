@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+function compareNumbers(a, b) {
+  return a > b ? a : b;
+}
+
+function findLargestNumber(arr, callback) {
+  let largest = arr[0]; 
+
+  for (let i = 1; i < arr.length; i++) {
+    largest = callback(largest, arr[i]);
+  }
+
+  return largest;
+}
+
+let numbers = [3, 9, 1, 7, 5, 12, 4];
+
+let largestNumber = findLargestNumber(numbers, compareNumbers);
+
+console.log("the largest number is",largestNumber);
+
+
+    </script>
+</body>
+</html>

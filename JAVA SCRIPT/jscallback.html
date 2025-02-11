@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+
+
+
+// function isPrime(number, callback) {
+
+
+//     if (number <= 1) {
+//         callback(false);
+//         return;
+//     }
+
+//     for (let i = 2; i <= Math.sqrt(number); i++) {
+//         if (number % i == 0) {
+//             callback(false);
+//             return;
+//         }
+//     }
+
+//     callback(true);
+// }
+
+// function result(isPrimeResult) {
+//     if (isPrimeResult) {
+//         console.log("The number is prime.");
+//     } else {
+//         console.log("The number is not prime.");
+//     }
+// }
+
+// isPrime(29, result); 
+// isPrime(10, result); 
+
+
+// let a=1;
+
+// function prime (){
+// console.log(a)    
+// }
+
+
+// prime()
+
+
+// work2
+
+// let arr = [1, 2, 3, 4, 5];
+
+// function print(number) {
+//   console.log(number);
+// }
+
+// print(arr)
+
+
+// work3
+
+
+
+
+// function print(number) {
+//     if (number <= 1) {
+//         callback(false);
+//         return;
+//     }
+
+//     for (let i = 2; i <= Math.sqrt(number); i++) {
+//         if (number % i == 0) {
+//             callback(false);
+//             return;
+//         }
+//     }
+
+//     callback(true);
+// }
+
+// function isPrime(num) {
+//   if (num <= 1) return false; 
+//   for (let i = 2; i <= Math.sqrt(num); i++) {
+//     if (num % i === 0) return false; 
+//   }
+//   return true;
+// }
+
+// function countPrimes(arr, callback) {
+//   let primeCount = 0;
+  
+//   arr.forEach((number) => {
+//     if (callback(number)) {
+//       primeCount++;
+//     }
+//   });
+
+//   return primeCount;
+// }
+
+// let numbers = [2, 3, 4, 5, 10, 13, 17, 18];
+
+// let primeCount = countPrimes(numbers, isPrime);
+
+// console.log(`Number of prime numbers in the array: ${primeCount}`);
+
+
+// // work 4//
+
+// function isPalindrome(num) {
+//   const str = num.toString(); 
+//   const reversedStr = str.split('').reverse().join(''); 
+//   return str === reversedStr; 
+// }
+
+// function sumPalindromes(arr, callback) {
+//   let sum = 0;
+  
+//   arr.forEach((number) => {
+//     if (callback(number)) {
+//       sum += number;
+//     }
+//   });
+
+//   return sum;
+// }
+
+// let numbers = [121, 232, 333, 123, 545, 1001, 678];
+
+// let palindromeSum = sumPalindromes(numbers, isPalindrome);
+
+// console.log(`Sum of palindrome numbers in the array: ${palindromeSum}`);
+
+
+// // work5
+
+function square(num) {
+  return num * num;
+}
+
+function cube(num, callback) {
+  const squareResult = callback(num); 
+  return squareResult * num;  
+}
+
+
+
+let number = 3;
+
+let cubeResult = cube(number, square);
+
+console.log(`The cube of ${number} is: ${cubeResult}`);
+
+
+// // work 6
+
+
+// function compareNumbers(a, b) {
+//   return a > b ? a : b;
+// }
+
+// function findLargestNumber(arr, callback) {
+//   let largest = arr[0]; 
+
+//   for (let i = 1; i < arr.length; i++) {
+//     largest = callback(largest, arr[i]);
+//   }
+
+//   return largest;
+// }
+
+// let numbers = [3, 9, 1, 7, 5, 12, 4];
+
+// let largestNumber = findLargestNumber(numbers, compareNumbers);
+
+// console.log(`The largest number in the array is: ${largestNumber}`);
+
+
+// // work7
+
+
+// function isArmstrong(num) {
+//   const numStr = num.toString();
+//   const numDigits = numStr.length;
+//   let sum = 0;
+
+//   for (let i = 0; i < numDigits; i++) {
+//     sum += Math.pow(parseInt(numStr[i]), numDigits);
+//   }
+
+//   return sum === num;
+// }
+
+// function printArmstrongNumbers(arr, callback) {
+//   arr.forEach((num) => {
+//     if (callback(num)) {
+//       console.log(num);
+//     }
+//   });
+// }
+
+// let numbers = [153, 370, 371, 9474, 123, 407, 5, 6];
+
+// printArmstrongNumbers(numbers, isArmstrong);
+
+
+
+// // work 8
+
+// function sumTwoNumbers(a, b) {
+//   return a + b;
+// }
+
+// function sumOfArray(arr, callback) {
+//   return arr.reduce(callback, 0); 
+// }
+
+// let numbers = [10, 20, 30, 40, 50];
+
+// let totalSum = sumOfArray(numbers, sumTwoNumbers);
+
+// console.log(`The sum of all numbers in the array is: ${totalSum}`);
+
+
+
+// work9
+
+// function isEven(num) {
+//   return num % 2 == 0;
+// }
+
+// function printEvenNumbers(arr, callback) {
+//   arr.forEach((num) => {
+//     if (callback(num)) {
+//       console.log(num);  
+//     }
+//   });
+// }
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// printEvenNumbers(numbers, isEven);
+
+
+    </script>
+    
+</body>
+</html>

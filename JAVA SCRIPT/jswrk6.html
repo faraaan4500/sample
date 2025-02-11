@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// Write a function that takes an array of numbers, filters out numbers 
+// less than a specified value, and returns a new array where each remaining number 
+// is incremented by 10 using filter and map methods.
+
+  
+function filternumber(number,filters){
+const filterd=number.filter(num=>num>=filters)
+const adding=filterd.map(num=>num+10)
+return adding
+}
+
+const values=[4,7,12,15,20,22]
+const spvalue=14
+console.log(filternumber(values,spvalue))
+
+
+    </script>
+</body>
+</html>

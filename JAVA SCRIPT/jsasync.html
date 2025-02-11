@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    .divv{border: 2px solid black;}
+
+</style>
+</head>
+<body   style="display: flex; flex-wrap: wrap; justify-content: center;gap: 10px;">
+    <script>
+
+
+
+
+// const getDataFromServer = async () => {
+//     const response = await fetch("https://dummyjson.com/products")
+//     const res = await response.json()
+//     const products = res.products
+//     for (let idx = 0; idx < products.length; idx++){
+//         const { title, price, thumbnail } = products[idx]
+//         document.body.innerHTML += `<div style="display: flex;">
+//             <div>
+//                 <img src="${thumbnail}" alt="${title}"/>
+//             </div>
+//             <div style="text-align: center;">
+//                 <h3>${title}</h3>
+//                 <p>$${price}</p>
+                
+//             </div>
+//         </div>`
+//     }
+// }
+
+// getDataFromServer()
+
+
+
+
+
+        const datafrmsrvr = async () => {
+            const response = await fetch("https://dummyjson.com/products")
+            const res= await response.json()
+            const products=res.products
+            for(let idx=0; idx < products.length ; idx++){
+                const {title,price,thumbnail }=products[idx]
+                document.body.innerHTML+= `<div>
+            <div class="divv" >
+                <img src="${thumbnail}" alt="${title}"/>
+            </div>
+            <div style="text-align: center;">
+                <h3>${title}</h3>
+                <p>$${price}</p>
+            </div>
+        </div>`
+            }
+        }
+
+        datafrmsrvr()
+
+
+
+    </script>
+</body>
+</html>
